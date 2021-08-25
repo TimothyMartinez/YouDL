@@ -1,10 +1,10 @@
-import requests, json, re
+import requests, json, re, config
 
 url = "https://youtube-mp36.p.rapidapi.com/dl"
 
 headers = {
     'x-rapidapi-host': "youtube-mp36.p.rapidapi.com",
-    'x-rapidapi-key': "5beaa74967mshf3577ef449407c9p11be8bjsn8aa15de9dbbd"
+    'x-rapidapi-key': config.APIkey
     }
 
 songs_failed_download = ""
